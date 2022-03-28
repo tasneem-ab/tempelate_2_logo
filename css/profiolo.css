@@ -1,0 +1,97 @@
+.portfoli{
+    background: #f9f9f9;
+
+}
+.portfoli-content{
+    overflow: hidden;
+    
+}
+.portfoli-item{
+    float: left;
+    width: 30%;
+    margin-bottom: 2%;
+    position: relative;
+    padding: 20px;
+
+}
+.portfoli-item:hover.layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+ .portfoli-item.layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+   
+    
+}
+.layer-info{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+}
+.layer-content-title{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 0.5s;
+    opacity: 0;
+    
+}
+.layer-content .category{
+    color: #6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 0s;
+    opacity: 0;
+
+
+}
+.layer-content a{
+    display: inline-block;
+    background: #6195ff;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    position: relative;
+    top: 10px; 
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 1s;
+    opacity: 0;
+    
+}
+.portfoli-item:hover .layer-content .category,
+.portfoli-item:hover .layer-content a ,
+.portfoli-item:hover  .layer-content-title{
+    top: 0;
+    opacity: 1;
+    visibility: visible ;
+}
+.layer-content a i{
+line-height: 40px;
+}
+
+.portfoli-item img{
+    width: 100%;
+}
+.portfoli-item.mg{
+    margin: 0 5%;
+
+}
